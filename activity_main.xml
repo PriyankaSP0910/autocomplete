@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/Fill_Birth"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:hint="@string/Fill_Birth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <TextView
+        android:id="@+id/LName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/LName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FName" />
+
+    <EditText
+        android:id="@+id/Fill_FName"
+        android:layout_width="153dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="57dp"
+        android:ems="10"
+        android:hint="@string/FName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toEndOf="@+id/FName"
+        app:layout_constraintTop_toBottomOf="@+id/Head"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/Fill_LName"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:hint="@string/LName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toEndOf="@+id/LName"
+        app:layout_constraintTop_toBottomOf="@+id/Fill_FName"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="140dp"
+        android:text="AutoCompleteView App"
+        android:textColor="#DD5080"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/FName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="104dp"
+        android:text="@string/FName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Head" />
+
+    <TextView
+        android:id="@+id/Birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/Birth"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LName" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Submit"
+        app:backgroundTint="#F40658"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Head"
+        app:layout_constraintVertical_bias="0.766" />
+</androidx.constraintlayout.widget.ConstraintLayout>
